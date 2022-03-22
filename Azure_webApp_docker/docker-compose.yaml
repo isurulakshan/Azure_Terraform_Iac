@@ -1,0 +1,12 @@
+version: "3.0"
+# This is the docker compose muti container yaml file which deploy postgre db, db init & servian app
+services:
+  #Deploy nginx container
+  nginx:
+    image: "nginx:latest"
+    restart: always
+    container_name: "postgres"
+    ports:
+      - 5432:5432
+
+ 
